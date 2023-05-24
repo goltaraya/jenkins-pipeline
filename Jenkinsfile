@@ -1,11 +1,6 @@
 pipeline {
     agent any
     stages{
-        stage("Indo para pasta app"){
-            steps {
-                sh "cd app/"
-            }
-        }
         stage("Build da imagem docker"){
             steps {
                 sh "docker build -t devops/app ."
