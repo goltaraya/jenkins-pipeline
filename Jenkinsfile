@@ -25,5 +25,10 @@ pipeline {
                 sh "./test-app.sh"
             }
         }
+        stage("Destruindo containers"){
+            steps{
+                sh "docker compose down"
+            }
+        }
     }
 }
