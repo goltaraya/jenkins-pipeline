@@ -21,7 +21,8 @@ pipeline {
         }
         stage("Teste da aplicação"){
             steps{
-                sh "test-app.sh"
+                sh "chmod +x test-app.sh"
+                sh "./test-app.sh"
             }
         }
     }
