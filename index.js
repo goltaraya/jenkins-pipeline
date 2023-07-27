@@ -2,6 +2,10 @@ const express = require('express')
 const redis = require('redis')
 
 const app = express()
+const app2 = express()
+const app3 = express()
+const app4 = express()
+
 app.disable("x-powered-by");
 const client = redis.createClient({
     host: "redis-server",
