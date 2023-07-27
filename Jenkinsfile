@@ -29,6 +29,9 @@ pipeline {
                 }
             }
         }
+        stage ("Quality Gate"){
+        
+        }
         stage("Teste da aplicação"){
             steps{
                 sh "chmod +x test-app.sh"
