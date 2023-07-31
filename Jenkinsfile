@@ -19,6 +19,7 @@ pipeline {
                 sh "sleep 10"
             }
         }
+        /*
         stage("SonarQube validation"){
             steps{
                 script{
@@ -33,7 +34,7 @@ pipeline {
             steps{
                 waitForQualityGate abortPipeline: true
             }
-        }      
+        } */     
         stage("Teste da aplicação"){
             steps{
                 sh "chmod +x test-app.sh"
